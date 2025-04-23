@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "keen-slider/keen-slider.min.css";
+import p1 from '../../assets/images/Projects_Images/Project_1.png'
+import p2 from '../../assets/images/Projects_Images/Project_2.png'
+import p3 from '../../assets/images/Projects_Images/Project_3.png'
 
 export const ProjectsSection: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,17 +33,17 @@ export const ProjectsSection: React.FC = () => {
   const projects = [
     {
       title: "Mobile App Design",
-      image: "assets/images/Projects_Images/Project_1.png",
+      image: p1,
       category: "UI/UX Design",
     },
     {
       title: "Interior Design Platform",
-      image: "assets/images/Projects_Images/Project_2.png",
+      image: p2,
       category: "Web Design",
     },
     {
       title: "Photography Portfolio",
-      image: "assets/images/Projects_Images/Project_3.png",
+      image: p3,
       category: "Web Platform",
     }
   ];
